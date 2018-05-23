@@ -1,0 +1,49 @@
+button
+.button
+  align-items center
+  justify-content space-between
+  height $input-height
+  padding 0 40px
+  background transparent
+  border none
+  border-radius $radius
+  text-align center
+  font-weight 600
+  white-space nowrap
+  transition all 0.2s linear
+
+  &:hover
+    transform scale(1.02)
+    box-shadow $shadow-2
+
+  &:active
+    transform scale(1)
+    box-shadow none
+
+  &.-fill-gradient
+    background $primary-gradient
+    color $white
+
+  &.-fill-gray
+    background $gray-dark
+    color $white
+
+  &.-size-small
+    height 32px
+
+  &.-icon-right
+    text-align left
+    padding 0 20px
+
+    > .icon
+      margin-left 10px
+
+  &.-icon-left
+    text-align right
+    padding 0 20px
+
+    > .icon
+      margin-right 10px
+
+  &.-icon-center
+    padding 0 20px
