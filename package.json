@@ -21,7 +21,7 @@
     "docs:build": "vuepress build docs",
     "build": "yarn build-stylus && yarn build-autoprefix && yarn build-cleancss",
     "build-stylus": "stylus -m mantl.styl -o mantl.css",
-    "build-autoprefix": "postcss mantl.css -u autoprefixer --no-map -o mantl.max.css",
+    "build-autoprefix": "postcss mantl.css -u autoprefixer --no-map -o mantl.css",
     "build-cleancss": "cleancss -o mantl.min.css mantl.css",
     "start": "yarn build-stylus -w"
   },
